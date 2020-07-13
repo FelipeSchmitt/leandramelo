@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Adtile Fixed Nav</title>
+    <meta name="author" content="Adtile">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <script src="js/responsive-nav.js"></script>
+    <style>
+      body{
+        background: rgb(2,0,36);
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(151,4,121,1) 39%, rgba(171,5,132,1) 74%, rgba(231,7,166,1) 92%);
+      }     
+      iframe{
+        width: 60%;
+        height: 600px;
+        margin-bottom: 5px;
+      } 
+      .title{
+        margin-left: 5%;
+        width: 90%;
+        background-color: purple;
+        line-height: 100px;
+        border-radius: 10px;
+        border-width: 5px;
+      }
+      .title h1{
+        font-family: 'Pacifico', cursive;
+        font-size: 38px;
+        font-weight: 200;
+        text-align: center;
+        margin-bottom: 50px;
+        color: rgb(236, 229, 229);
+      }
+      .apresentacao{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        text-align: left;
+      }
+      .apresentacao img{
+        margin: 10px;
+        width: 100%;
+        border-radius: 2px;
+      }
+      .apresentacao p{
+        font-family: Arial;
+        font-size: 30px;
+        font-weight: 400;
+      }
+      .apresentacao2{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        text-align: center;
+      }
+      .apresentacao2 img{
+        margin: 10px;
+        width: 100%;
+        border-radius: 2px;
+        margin-left:-20%;
+      }
+      .apresentacao2 p{
+        font-family: Arial;
+        font-size: 30px;
+        font-weight: 400;
+      }
+      .nav-collapse ul li:hover{
+        background-color: white;
+      }
+      #text1{
+        background-color: white;
+        border-radius: 10px;
+        margin-left: 5%;
+        width: 90%;
+        height: 99%;
+      }
+      #text2{
+        background-color: white;
+        border-radius: 10px;
+        text-align: left;
+        margin: 10px;
+        width: 90%;
+      }
+      .sobre{
+        width: 95%;
+        background-color: rgb(236, 229, 229);
+        margin-left: 2.5%;
+      }
+      .sobre p{
+        padding: 80px;
+        color: black;
+        font-family: 'Pacifico', cursive;
+        font-size: 42px;
+      }
+      .social{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        
+        margin-bottom: 40px;
+      }
+      .social img{
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+      }
+      #services, #gallery, #about {
+        color: rgb(236, 229, 229);
+      }
+      #tel p{
+        font-family: Arial;
+        font-size: 24px;
+      }
+      .social img:hover{
+        border-radius: 18px;
+        box-shadow: 0px 0px 10px;
+      }
+
+      #services img{
+        width: 90%;
+        border-radius: 3em;
+      }
+      #services img:hover{
+        cursor: pointer;
+      }
+      #gallery{
+        height: px;
+      }
+      .content-gallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: 85%;
+        margin-left: 7.5%;
+        background-color: white;
+        border-radius: 1em;
+        padding: 10px;
+      }
+      .content-gallery img{
+        width:97%;
+        padding: 3px;
+      }
+      .content-gallery img:hover{
+          -webkit-transform: scale(1.05);
+          -moz-transform: scale(1.05);
+          -o-transform: scale(1.05);
+          -ms-transform: scale(1.05);
+          transform: scale(1.05);
+          border-radius: 1rem;
+      }
+
+      
+      
+
+      @media screen and (max-width: 70em){
+        .title h1{
+          font-size: 26px;
+        }
+        .apresentacao p{
+          font-size: 16px;
+          font-weight: 600;
+        }
+        .apresentacao{
+          grid-template-columns: 1fr;
+        }
+        .apresentacao img{
+          width: 85%;
+          display: block;
+          margin: auto;
+          border-radius: 20px;
+        }
+        #text1{
+          width: 97%;
+          display: block;
+          margin: auto;
+        }
+        .sobre p{
+          font-size: 24px;
+          padding: 0;
+          margin-top: 20px;
+          margin-bottom: 20px;
+        }
+        .social img{
+          width: 70%;
+          margin-left: 15%;
+        }
+        .apresentacao2{
+          grid-template-columns: 1fr;
+        }
+        .apresentacao2 #text2:nth-of-type(1){
+          order: 2;
+        }
+        .apresentacao2 #img2:nth-of-type(2){
+          order: 1;
+        }
+        .apresentacao2 img{
+          width: 85%;
+          display: block;
+          margin: auto;
+          border-radius: 20px;
+        }
+        .apresentacao2 p{
+          font-size: 16px;
+          font-weight: 600;
+        }
+        #text2{
+          width: 97%;
+          display: block;
+          margin: auto;
+        }
+        .content-gallery{
+          width: 95%;
+          grid-template-columns: 1fr 1fr;
+          margin-left: 2%;
+          padding: 2px;
+        }
+
+        iframe{
+          width: 90%;
+          height: 400px;
+        }
+      }
+      
+
+    </style>
+  </head>
+  <body>
+
+    <header>
+      <a href="#home" class="logo" data-scroll>Estúdio Leandra Melo</a>
+      <nav class="nav-collapse">
+        <ul>
+          <li class="menu-item active"><a href="#home" data-scroll>Inicio</a></li>
+          <li class="menu-item"><a href="#services" data-scroll>Serviços</a></li>
+          <li class="menu-item"><a href="#gallery" data-scroll>Galeria</a></li>
+          <li class="menu-item"><a href="#about" data-scroll>Sobre</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="home">
+      <div class="title">
+      <h1>Estúdio Lendra Melo</h1>
+    </div>
+    <div class="apresentacao">
+      <img src="images/img1.jpg">
+      <div id="text1">
+      <p>O Estúdio Leandra Melo conta com uma equipe de profissionais qualificados com o propósito de te fazer se sentir a cada dia uma mulher mais empoderada, realçando
+        sua beleza!
+      </p></div>
+    </div>
+    <div class="apresentacao2">
+      <div id="text2">
+        <p>Venha fazer parte dessa nova equipe, nós temos certeza que você vai se surpreender!</p>
+      </div>
+      <div id="img2">
+      <img src="images/img2.jpg">
+    </div>
+    </div>
+  </div>
+</div>
+
+    </section>
+
+    
+    <section id="services">
+      <h1>Serviços</h1>
+      <img src="images/servicesimg.jpg">
+    </section>
+    
+    <section id="gallery">
+      <h1>Galeria</h1>
+<div class="content-gallery">
+
+<div id="box1"><img src="images/gallery/1.jpg"></div>
+<div id="box2"><Img src="images/gallery/2.jpg"></div>
+<div id="box3"><Img src="images/gallery/3.jpg"></div>
+<div id="box4"><Img src="images/gallery/4.jpg"></div>
+<div id="box5"><Img src="images/gallery/5.jpg"></div>
+<div id="box6"><Img src="images/gallery/6.jpg"></div>
+<div id="box7"><Img src="images/gallery/7.jpg"></div>
+<div id="box8"><Img src="images/gallery/8.jpg"></div>
+
+</div>
+
+    </section>
+
+    <section id="about">
+      <h1>Sobre</h1>
+      <div class="sobre">
+      <p>Encontre-nos nas redes socias e em nosso endereço!</p>
+      <div class="social">
+      <div id="rede1">
+      <a href="https://www.facebook.com/pages/Studio-Leandra-Melo/2297991906987485"><img src="https://logodownload.org/wp-content/uploads/2014/09/facebook-logo-2-1.png"></a>
+      </div>
+      <div id="rede2">
+      <img src="https://lh5.googleusercontent.com/fIvslpq8YQRlioE5admknxdmUYcFFg1_HjGXVmlBlBeANENnOoCCZ4UuEgVX0McH9Gj9XkOz6vKpUPBIymAFPqa38lrK2XHSkonG-44StAZqkZnTJ4gGgd4omtrmv4yW5yVdgevA">
+      </div>
+      <img src="https://lh3.googleusercontent.com/KxeSAjPTKliCErbivNiXrd6cTwfbqUJcbSRPe_IBVK_YmwckfMRS1VIHz-5cgT09yMo">
+      </div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d316.05364773400896!2d-48.817448173466445!3d-26.334954831602825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94deb1a0f71fbe85%3A0x8d2411cb6871cee1!2sEst%C3%BAdio%20Leandra%20Melo!5e0!3m2!1spt-BR!2sbr!4v1590267120566!5m2!1spt-BR!2sbr" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      <div id="tel">
+      <p>Tel (47) 3227-7904 - Joinville</p>
+      </div>
+      </div>
+      </div>
+    </section>
+
+    <script src="js/fastclick.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/fixed-responsive-nav.js"></script>
+  </body>
+</html>
